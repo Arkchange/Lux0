@@ -1,4 +1,7 @@
 import requests
+import time
+
+start = time.time()
 
 url = "https://ml-inference-service-101237808179.europe-west1.run.app/predict"
 payload = {
@@ -11,5 +14,8 @@ headers = {
 
 response = requests.post(url, json=payload, headers=headers)
 
+end = time.time()
+
+print("Request duration:", end - start, "seconds")
 print("Status code:", response.status_code)
 print("Response JSON:", response.json())
