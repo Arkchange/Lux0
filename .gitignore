@@ -1,1 +1,9 @@
 ml-interference-service/__pycache__/
+
+NLP_Response/Candidature.csv
+NLP_Response/__pycache__
+NLP_Response/Candidature.joblib
+NLP_Response/vectorizer.joblib
+NLP_Response/copy.md
+
+
